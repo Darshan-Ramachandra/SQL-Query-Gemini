@@ -39,8 +39,14 @@ git clone https://github.com/<your-username>/gemini-sql-query-retriever.git
 ```bash
 cd gemini-sql-query-retriever
 ```
+### 3. Create a virtual env
 
-### 3. Install Dependencies
+```bash
+cd python -m venv venv
+cd ./venv/Scripts/Activate
+```
+
+### 4. Install Dependencies
 
 Ensure you have Python 3.8+ installed.
 
@@ -49,7 +55,7 @@ pip install -r requirements.txt
 ```
 
 
-### 4. Set Up Environment Variables
+### 5. Set Up Environment Variables
 
 Create a `.env` file in the root directory with the following content:
 
@@ -57,7 +63,7 @@ Create a `.env` file in the root directory with the following content:
 GOOGLE_API_KEY=<your-gemini-api-key>
 ```
 
-### 5. Run the App
+### 6. Run the App
 
 ```bash
 streamlit run app.py
